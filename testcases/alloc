@@ -1,7 +1,7 @@
 alloc 0 r
 alloc 1 r
-alloc 2 w
-alloc 3 w
+alloc 2 rw
+alloc 3 rw
 
 alloc 16 r
 alloc 17 rw

@@ -8,8 +8,8 @@ alloc 18 rw
 alloc 19 rw
 alloc 8 r
 alloc 7 r
-alloc 6 w
-alloc 5 w
+alloc 6 rw
+alloc 5 rw
 show
 pages
 
