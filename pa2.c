@@ -292,7 +292,7 @@ void switch_process(unsigned int pid)
 					newpd->ptes[j].writable=false;
 					
 					newpd->ptes[j].pfn = old_pte->pfn;
-
+					mapcounts[old_pte->pfn]++;
 					newpd->ptes[j].private = old_pte->private;
 				}
 			}
