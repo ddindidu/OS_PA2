@@ -210,6 +210,9 @@ bool handle_page_fault(unsigned int vpn, unsigned int rw)
 		int i;
 		for(i=0; i<NR_PAGEFRAMES; i++){
 			if(mapcounts[i]==0){
+				int old_pfn = pte->pfn;
+				mapcounts[pfn]--;
+
 				mapcounts[i]++;
 
 				pte->writable = true;
